@@ -1,0 +1,240 @@
+*
+{
+  margin: 0; padding: 0;
+}
+    
+
+
+@media only screen and (max-width: 1170px)
+{   
+    .container { width: 1024px; }
+    /***header***/
+
+    /***promo-content***/
+.promo .promo-content{width: 80%;}
+.promo {height: 60vh;}
+.promo .slider-item {height: 60vh;}
+.slick-dots {bottom: 110px;}
+	/***aboat***/
+.about .about-wrap {height: 270px;}
+.about_cont_p {height: 170px;}
+	/***services***/
+.service-content figure h4 {font-size: 25pt;padding: 15px;}
+.service-content figure p {font-size: 11pt;}
+	/***footer***/
+
+footer .number, footer .social, footer .footer-logo {width: 30%;}
+.form-slider { width: 60%; }
+
+	/***CONTACTS***/
+.contacts section {width: auto;}
+.contacts p {padding: 0px 60px;}
+.map {height: 400px;}
+
+	/***SERVISES_LIST***/
+.services-list aside { width: 25%;}
+}
+
+
+@media only screen and (max-width: 1023px)
+{ 
+    .container { width: 768px; }
+
+    /***header***/
+header .logo {width: 200px;}
+header .number, header .time, header .social {width: 20%;}
+	/***promo-content***/
+
+.slick-dots {bottom: 75px;}
+	/***services***/
+.service-content figure {width: 80%; margin: 10px auto;}
+.services-list .container { flex-wrap: wrap; }
+.services-list aside { margin: 0 auto 10px; width: auto; border-right: none; }
+
+	/***aboat***/
+.about .about-wrap {width: 47%; height: 240px;}
+	/***project***/
+.project .flex {flex-wrap: wrap;}
+.project .project-content {width: 49%; margin-bottom: 10px;}
+.project .project-content, .project .project-first, .project .project-last {height: 330px;}
+	/***order***/
+.order .form-text {width: 60%;}
+.order .form-text h3 {font-size: 22pt;}
+.order .form-wrap { width: 33%;}
+.promo-about h3, .promo-about h1 {font-size: 22pt;}
+
+	/***CONTACTS***/
+.contacts p {padding: 0px 20px;}
+.contacts h4 {font-size: 14pt; margin-bottom: 15px;}
+
+
+
+	/***SERVISES_LIST***/
+.services-m-menu {display: block; width: 50%;}
+.services-content-wrap {width: 100%; margin-left: 0;}
+.services-content-wrap section { margin-bottom: 0;}
+.big_img { height: 350px; }
+.small_img { height: 100px; }
+.form-slider { width: 80%; }
+.audi-service span { height: 250px;}
+}   
+
+
+@media only screen and (max-width: 767px)
+{
+    .container { width: 568px; }
+	h3{font-size: 22pt; padding: 30px 0;}
+	p {font-size: 11pt;}
+	.all_btn {padding: 10px 30px;}
+    /***header***/
+header {width: 100%;}  
+header .mob {width: 0; margin-left: 100px;}
+header .number {width: 28%;}
+header .number a {font-size: 10pt;}
+header .time, header .social {display: none;}
+.menu { display: none;}
+.mob_menu { display: block; }
+	/***promo***/
+.promo .promo-content {width: 100%;}
+.promo .slider-item, .promo { height: 80vh; }
+.promo .slick-prev,.promo .slick-next {display: none !important;}
+.promo .slick-dots {bottom: 40px !important;}
+.promo h3 {padding: 0 0 15px 0;}
+.promo .slick-dots li button:before {font-size: 13px;}
+	/***about***/
+.about { padding: 20px 0 50px;}
+.about .about-wrap:first-child { margin-top: 0; }
+.about .about-wrap {height: 190px; width: 100%; padding: 15px 15px;}
+.about .about-wrap h4 {font-size: 14pt; padding-left: 55px; margin: 25px 0;}
+.about-icon { top: 30px;left: 20px;}
+.about .about-icon i {font-size: 25pt;}
+.about_cont_p { height: 90px;}
+	/***statistic***/
+.statistic {padding: 30px 0;}
+.statistic h4 {font-size: 25pt;}
+	/***project***/
+.project { padding: 20px 0 50px;}
+	/***services***/
+.services .service-content figure {width: 100%;}
+.services {padding: 20px 0 50px;}
+	/***gallery***/
+.gallery .slick-dots li button:before {font-size: 12px;}
+	/***order***/
+.order { padding: 50px 0; }
+.order .flex {flex-wrap: wrap;}
+.order .form-text {width: 100%;}
+.order .form-text h3, .order .form-text p {text-align: center;}
+.order .form-wrap { width: 80%; margin: 10px auto; margin-top: 30px;}
+.order .inp {margin-bottom: 15px;}
+	/***footer***/
+footer .flex {flex-wrap: wrap;}
+footer .number, footer .social, footer .footer-logo {width: 100%; text-align: center; margin-bottom: 15px;}
+footer .logo a { margin: auto; }
+
+	/***CONTACTS***/
+.map {height: 320px;}
+.contacts .flex {flex-wrap: wrap;}
+.contacts section {width: 100%; margin-bottom: 30px;}
+.contacts p {padding: 0px; text-align: center;}
+
+
+	/***MODALS***/
+.form_modal { width: 350px; padding: 20px;}
+.form_modal h4 {padding-bottom: 15px; font-size: 20pt;}
+.form_modal input {margin-bottom: 15px;}
+
+
+	/***AUDI-SERVICE***/
+.audi-service span { display: none;}
+.audi-service-wrap-content {width: 100%;padding: 30px 0px; order: 1;}
+.audi-service-wrap {padding: 0; margin: 0; }
+.service_table td {font-size: 10pt;}
+
+	/***SERVISES_LIST***/
+.services-m-menu { width: 100%;}
+.services-list {padding: 50px 0;}
+
+/***MODAL-SLIDER***/
+
+.modal-wrap-slider .slider-for{ display: none; }
+.small_img{height: 60vh !important;}
+.form-slider .close {top: 5px;right: 5px;width: 10px;height: 10px;}
+.slick-prev:before, .slick-next:before { width: 15px;height: 25px;}
+
+.sale1
+{
+	width: 150px;
+	height: 150px;
+	bottom: 100px;
+	left: 5px;
+}
+
+.sale2
+{
+	width: 150px;
+	height: 80px;
+	padding: 20px 20px 20px 10px;
+	bottom: 20px; left: 15px;
+}
+
+.sale1 p,
+.sale2 p
+{
+	font-size: 6pt;
+}
+
+
+}
+
+@media only screen and (max-width: 567px)
+{
+    .container { width: 320px; }
+    h3{font-size: 18pt;}
+    /***header***/
+header .logo, header .number {width: auto;} 
+header .logo a { width: 100px; padding-left: 40px; height: auto; position: relative; top: 5px; }  
+header .logo a p { font-size: 30pt; position: relative; top: 5px; } 
+header .logo a p span { font-size: 12pt; }
+header .number a {font-size: 9.5pt;}
+header .mob {display: none;}
+.promo .slick-dots {bottom: 75px !important;}
+/*.mob_nav { max-height:;}*/
+	/***about***/
+.about {display: none;}
+	/***statistic***/
+.statistic{display: none;}
+	/***services***/
+.services .service-content figure {width: 100%; height: 280px;}
+.service-content figure figcaption { height: 280px; }
+.service-content figure .all_btn { bottom: 50px; }
+.service-content figure h4 {font-size: 28pt; padding-top: 50px;}
+.service-content figure p {display: none;}
+	/***project***/
+.project { padding-bottom: 0; }
+.project .project-content {width: 100%;}
+.project .project-content h4 {font-size: 20pt;}
+	/***order***/
+.order .form-text h3 {font-size: 17pt;}
+.order .form-wrap {width: 100%;}
+	/***footer***/
+footer .number h4 {font-size: 12pt;}
+
+
+	/***MODALS***/
+.form_modal { width: 290px;}
+.form_modal h4 {font-size: 16pt;}
+
+	/***SERVISES_LIST***/
+.services-list .inp { margin-bottom: 0; }
+/*.services-content-wrap section { padding: 15px; }*/
+.service_table th {font-size: 11pt;}
+.service_table td {font-size: 10pt; padding: 10px;}
+
+/***MODAL-SLIDER***/
+.form-slider {padding: 30px 20px;}
+.small_img{height: 45vh !important;}
+
+	/***POP_UP*/
+.pop-up-cont {width: 80%;padding: 20px 35px;}
+
+}

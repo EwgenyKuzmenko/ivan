@@ -41,16 +41,16 @@ $('.slider4-item').click(function(){
   $('body').css({overflow: 'hidden'});
   $('.modal-wrap-slider').fadeIn();
   let id = $(this).attr('data-id');
-
+ 
 
   $.post('initgallery.php', {id: id}, function(response){
     console.log(response);
     response = JSON.parse(response);
-
-    if(statusGallery == false)
-    {
+    
+    if(statusGallery == false) 
+    { 
       statusGallery = true;
-    }
+    } 
     else
     {
       $('.slider-for, .slider-nav').slick('destroy');
@@ -102,7 +102,7 @@ $('#order_form').submit(function(){
         }, 3000);
       }
     })
-
+    
   }
 
   return false;
