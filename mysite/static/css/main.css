@@ -305,7 +305,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
   max-height: calc(100vh - 128px);
   display: none;
 }
-.mob_nav a{
+.mob_nav a:{
   display: block;
   width: 250px;
   margin: auto;

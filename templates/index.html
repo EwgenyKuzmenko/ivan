@@ -104,9 +104,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<a class="menu_btn">
 				<span style="background: url({% static 'img/menu.png' %}) no-repeat center/contain;"></span>
 			</a>
-				<nav class="mob_nav">
+				<nav class="mob_nav" style="display: none; overflow:auto:">
+
 					<a href="">Главная</a>
-					<a href="">О нас</a>
+					<a href="{% url 'about' %}">О нас</a>
 					<a href="">Диагностика</a>
 					<a href="">Ремонт ходовой части</a>
 					<a href="">Ремонт двигателя</a>
@@ -496,7 +497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-		<script src="js/main.js"></script>
+		<script src="{% static 'js/main.js' %}"></script>
 
 		<!-- BEGIN JIVOSITE CODE {literal} -->
 		<!--<script type='text/javascript'>
