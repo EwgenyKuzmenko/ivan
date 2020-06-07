@@ -1,5 +1,4 @@
 *
-
 {
   margin: 0;
   padding: 0;
@@ -162,7 +161,7 @@ header {
 }
 
 .logo a {
-  width: 185px;
+  width: 185px; 
   height: 70px;
   display: block;
   padding-left: 65px;
@@ -180,7 +179,7 @@ header {
   letter-spacing: 3px;
 }
 .logo a p span {
-  font-size: 11pt;
+  font-size: 16pt;
   font-weight: 300;
   color: #ff5300;
   position: relative;
@@ -305,7 +304,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
   max-height: calc(100vh - 128px);
   display: none;
 }
-.mob_nav a:{
+.mob_nav a{
   display: block;
   width: 250px;
   margin: auto;
@@ -313,9 +312,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
   text-align: center;
   border-bottom: 1px solid #555;
 }
-.mob_nav a:last-child {
-  border-bottom: none;
-}
+.mob_nav a:last-child { border-bottom: none; }
 
 .active { color: #ff5300 !important; }
 
@@ -375,7 +372,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
   padding: 40px 0 70px; 
   width: 100%;
   height: auto;
-  background: #fff no-repeat center/cover;
+  background: url(../img/a_b_G.jpg.html) no-repeat center/cover;
   position: relative;
 }
 
@@ -441,7 +438,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
 /***STATISTIC***/
 
 .statistic {
-  background: #fff no-repeat center/cover;
+  background: url(../img/stat-bg.jpg) no-repeat center/cover;
   padding: 80px 0;
   position: relative;
   box-shadow: 0 0px 7px rgba(0,0,0,.45);
@@ -567,7 +564,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', end
 
 .gallery {
   padding: 30px 0 80px; 
-  background: #fff no-repeat center/cover;
+  background: url(../img/g3.jpg) no-repeat center/cover;
   position: relative;
 }
 
@@ -826,8 +823,8 @@ font-weight: 700;
   width: 30px;
   height: 30px;
 }
-.services-list aside li:first-child:before {background: #fff no-repeat center/contain;}
-.services-list aside li:last-child:before {background: #fff no-repeat center/contain;}
+.services-list aside li:first-child:before {background: url(../img/li1.png)no-repeat center/contain;}
+.services-list aside li:last-child:before {background: url(../img/li2.png)no-repeat center/contain;}
 .services-list aside li a {    
   color: #ff5300;
   font-size: 16pt;
@@ -925,7 +922,7 @@ font-weight: 700;
 .order{
   position: relative;
   padding: 80px 0;
-  background: #fff no-repeat center/cover;
+  background: url(../img/form.jpg)no-repeat center/cover;
 }
 .order .container {
   align-items: flex-start;
@@ -991,7 +988,7 @@ font-weight: 700;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #fff no-repeat center/contain;
+  background: url(../img/close.png)no-repeat center/contain;
   z-index: 900;
 }
 
@@ -1091,7 +1088,7 @@ font-weight: 700;
 {
 	position: fixed; bottom: 170px; left: 20px;
 	width: 250px; height: 250px;
-	background: #fff no-repeat center/contain;
+	background: url(../img/sale1.png)no-repeat center/contain;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1118,7 +1115,7 @@ font-weight: 700;
 {
 	position: fixed; bottom: 50px; left: 20px;
 	width: 300px; height: 110px;
-	background: #fff no-repeat center/contain;
+	background: url(../img/sale2.png)no-repeat center/contain;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
