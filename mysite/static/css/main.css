@@ -37,7 +37,7 @@ h3,h1
 {
   font-size: 36pt; 
   padding: 50px 0 40px; 
-  color: #ff5300; 
+  color: #ff5300;
   letter-spacing: 1px; 
   text-align: center;
   text-transform: uppercase;
@@ -158,6 +158,7 @@ header {
   width: 40%;
   color: #ff5300;
   margin-top: -5px;
+  margin-left: -50px;
 }
 
 .logo a {
