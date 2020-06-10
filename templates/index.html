@@ -101,24 +101,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					<a href="">Главная</a>
 					<a href="">О нас</a>
-					<a href="">Новости</a>
-					<a href="">Услуги и цены</a>
+					<a href="{% url 'news'%}">Новости</a>
+					<a href="{% url 'price' %}">Услуги и цены</a>
 					<a href="">Подбор запчастей</a>
 
 					<a href="">Контакты</a>
 				</nav>
 		</div>
-
 		<nav class="menu">
 			<div class="container flex">
 				<a class="active" href="">Главная</a>
 					<a href="">О нас</a>
 					<a href="{% url 'news'%}">Новости</a>
-					<a href="">Услуги и цены</a>
+					<a href="{% url 'price' %}">Услуги и цены</a>
 					<a href="">Подбор запчастей</a>
 					<a href="">Контакты</a>
 			</div>
 		</nav>
+
+
         <div class="promo">
 			<div class="slider">
 									<div class="slider-item" style="background: url({% static 'upload/img/my2.jpg' %}) no-repeat top center/cover;"></div>
@@ -278,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<section class="container flex">
 				<div class="footer-logo logo">
 					<a href="index.html" style="background: url({% static 'upload/img/logo.jpg' %})no-repeat center left/40%">
-						<p>VAG<br><span>service</span></p>
+						<p>Impuls<br><span>avtoservice</span></p>
 					</a>
 				</div>
 				<div class="number">
@@ -298,10 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<p class="copy">Development by jekajeka63 © 2020</p>
 			<br>
 </footer>
-
-
-
-		<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 
 	</body>
