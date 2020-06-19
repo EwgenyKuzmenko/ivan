@@ -54,10 +54,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	  gtag('config', 'UA-158336995-1');
 	</script>
-
-
-
 </head>
+  <style>
+  </style>
+
 	<body>
 
 <!-- Google Tag Manager (noscript) -->
@@ -119,35 +119,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</nav>
 			<!--<h1>Услуги</h1>-->
-		</div>
-		<div class="services-list">
-			<div class="container flex">
-				<aside>
-					<ul>
-						<li><a class="prices_btn">Стоимость услуг</a></li>
-					</ul>
-				</aside>
-				<div class="services-content-wrap">
-					<div class="article">
-						<p>{{ zag }}</p>
-                    </div>
-					<br>
-					<section>
-						<a name="prices"></a>
-						<h2>{{ page }}</h2>
-                        {{ tovar }}
-                        <table class="service_table">
-							<tr>
-								<th>Наименование услуги</th>
-								<th>Стоимость</th>
-                            </tr>
-                        </table>
 
-					</section>
 
-				</div>
+    {% for i,d in news.items %}
+        <li class="b-prev-articles__list-item">
+    <h4>{{ i }}</h4>
+    {{ d }}
+        </li>
+  <br>
+    {% endfor %}
 
-			</div>
+ <br>
+            <br>
+            <br> <br>
+            <br>
+            <br> <br>
+            <br>
+            <br> <br>
+            <br>
             <br>
             <br>
             <br>
