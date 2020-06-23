@@ -42,6 +42,7 @@ footer .number, footer .social, footer .footer-logo {width: 30%;}
 
     /***header***/
 header .logo {width: 200px;}
+.logo p { display: none; }
 header .number, header .time, header .social {width: 20%;}
 	/***promo-content***/
 
@@ -129,7 +130,7 @@ header .time, header .social {display: none;}
 	/***footer***/
 footer .flex {flex-wrap: wrap;}
 footer .number, footer .social, footer .footer-logo {width: 100%; text-align: center; margin-bottom: 15px;}
-footer .logo a { margin: auto; }
+footer .logo a { margin: auto; background-size: contain !important; background-position: center !important; }
 
 	/***CONTACTS***/
 .map {height: 320px;}
@@ -183,6 +184,21 @@ footer .logo a { margin: auto; }
 	font-size: 6pt;
 }
 
+.news article
+{
+	width: 96%;
+}
+
+.news article h1
+{
+	font-size: 13pt;
+}
+
+.search_block h4
+{
+	font-size: 13pt;
+}
+
 
 }
 
@@ -192,7 +208,8 @@ footer .logo a { margin: auto; }
     h3{font-size: 18pt;}
     /***header***/
 header .logo, header .number {width: auto;} 
-header .logo a { width: 100px; padding-left: 40px; height: auto; position: relative; top: 5px; }  
+
+header .logo a { width: 100px; padding-left: 40px;  position: relative; top: 5px; background-size: contain !important; }  
 header .logo a p { font-size: 30pt; position: relative; top: 5px; } 
 header .logo a p span { font-size: 12pt; }
 header .number a {font-size: 9.5pt;}

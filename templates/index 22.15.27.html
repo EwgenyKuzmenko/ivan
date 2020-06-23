@@ -16,17 +16,18 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--Slick-->
-	<link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick.css' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick-theme.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick.js' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick-theme.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
 	<script src="{% static 'js/slick/slick.min.js' %}"></script>
     <script src="{% static 'js/slick.js' %}"></script>
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 
 </head>
 	<body>
+
 		<header>
 			<section class="container flex">
 				<div class="logo">
@@ -39,8 +40,8 @@
 				</div>
 				<div class="number">
 					<h4>Наши контакты:</h4>
-					<a href="tel:+380682090867" class="first-tel">+380682090867</a>
-					<a href="tel:+380682090867">+380682090867</a>
+					<a href="tel:+380501111111" class="first-tel">+380501111111</a>
+					<a href="tel:+380501111111">+380501111111</a>
 				</div>
 				<div class="time">
 					 <h4>Режим работы:</h4>
@@ -48,9 +49,11 @@
 					<h5 style="margin-left:-25px;">Сб: 10:00-17:00</h5>
 				</div>
 				<div class="social">
-					<a href="viber://add?number=380682090867" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
-					<a href="https://telegram.im/@impulse_stoBot" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
-                </div>
+					<a href="viber://add?number=380501111111" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
+					<a href="https://telegram.im/" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+					
+					
+				</div>
 			</section>
 		</header>
 		<div class="mob_menu">
@@ -58,34 +61,36 @@
 				<span style="background: url({% static 'img/menu.png' %}) no-repeat center/contain;"></span>
 			</a>
 				<nav class="mob_nav">
-				<a href="{% url 'index' %}">Главная</a>
-				<a href="{% url 'about' %}">О нас</a>
-                <a href="{% url 'news' %}">Новости</a>
-				<a href="{% url 'price' %}">Услуги и цены</a>
-				<a href="{% url 'parts' %}">Подбор запчастей</a>
-				<a href="{% url 'contacts' %}">Контакты</a>
+					<a href="/">Главная</a>
+					<a href="/about">О нас</a>
+					<a href="/news">Новости</a>
+					<a href="/prices">Услуги и цены</a>
+					<a href="/parts">Подбор запчастей</a>
+					<a href="/contacts">Контакты</a>
 				</nav>
 		</div>
 
 		<nav class="menu">
 			<div class="container flex">
-				<a href="{% url 'index' %}">Главная</a>
-				<a href="{% url 'about' %}">О нас</a>
-                <a href="{% url 'news' %}">Новости</a>
-				<a href="{% url 'price' %}">Услуги и цены</a>
-				<a href="{% url 'parts' %}">Подбор запчастей</a>
-				<a href="{% url 'contacts' %}">Контакты</a>
+				<a href="/">Главная</a>
+				<a href="/about">О нас</a>
+				<a href="/news">Новости</a>
+				<a href="/prices">Услуги и цены</a>
+				<a href="/parts">Подбор запчастей</a>
+				<a href="/contacts">Контакты</a>
 			</div>
 		</nav>
 
 		<div class="promo">
 			<div class="slider">
-				<div class="slider-item" style="background: url({% static 'img/my1.jpg' %}) no-repeat top center/cover;"></div>
-				<div class="slider-item" style="background: url({% static 'img/my2.jpg' %}) no-repeat top center/cover;"></div>
+				<div class="slider-item" style="background: url({% static '/img/my1.jpg' %}) no-repeat top center/cover;"></div>
+                <div class="slider-item" style="background: url({% static '/img/my1.jpg' %}) no-repeat top center/cover;"></div>
+                <div class="slider-item" style="background: url({% static '/img/my1.jpg' %}) no-repeat top center/cover;"></div>
+				<div class="slider-item" style="background: url({% static '/img/my2.jpg' %}) no-repeat top center/cover;"></div>
 			</div>
 			<div class="promo-content">
-				<h3>Акция</h3>
-				<p>текст акции</p>
+				<h3>РЕМОНТ И ОБСЛУЖИВАНИЕ АВТОМОБИЛЕЙ</h3>
+				<p>slider textssss</p>
 			</div>
 		</div>
 
@@ -127,7 +132,7 @@
 				           <a href="/" class="all_btn">Подробнее</a>
 					    </figcaption>
 					</figure>
-
+					
 				</div>
 			</div>
 		</div>
@@ -164,7 +169,7 @@
 						<span style="background: url({% static 'img/g5.jpg' %})no-repeat center/cover;"></span>
 						<span style="background: url({% static 'img/g3.jpg' %})no-repeat center/cover;"></span>
 					</div>
-
+					
 				</div>
 			</div>
 		</div>
@@ -178,6 +183,7 @@
 			</section>
 		</div>
 
+
 		<footer>
 			<section class="container flex">
 				<div class="footer-logo logo">
@@ -187,19 +193,58 @@
 				</div>
 				<div class="number">
 					<h4>Наши контакты:</h4>
-					<a href="tel:+380682090867" class="first-tel">+380682090867</a>
-					<a href="tel:+380682090867" class="first-tel">+380682090867</a>
-					<a href="mailto:impuse@mail.com">impuse@mail.com</a>
+					<a href="tel:+380501111111" class="first-tel">+380501111111</a>
+					<a href="tel:+380501111111" class="first-tel">+380501111111</a>
+					<a href="mailto:mail@mail.com">mail@mail.com</a>
 				</div>
 				<div class="social">
-					<a href="viber://add?number=380682090867" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
-					<a href="https://telegram.im/@impulse_stoBot" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
-                </div>
+					<a href="viber://add?number=380501111111" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
+					<a href="https://telegram.im/@vag_comua" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+					
+				</div>
 
 			</section>
-			<p class="copy">Development by jekajeka63 © 2020</p>
+			<p class="copy">Development by fruitKit © 2018</p>
 			<br>
 			
 		</footer>
+
+
+
+
+		<div class="modal_wrap" >
+			<div class="form_modal">
+				<div class="close"></div>
+				<h4>Записаться</h4>
+				<input class="inp" type="text" class="modal-text" placeholder="Имя">
+				<input class="inp" type="tel" class="modal-phone" placeholder="Телефон">
+				<button class="all_btn">Отправить</button>
+			</div>
+		</div>
+
+		<div class="modal-wrap-slider">
+			<div class="form-slider">
+				<div class="close"></div>
+				<div class="slider-for">
+				  <!-- <div class="big_img" style="background: url(./img/s1.jpg)no-repeat center/cover;"></div>
+				  <div class="big_img" style="background: url(./img/s2.jpg)no-repeat center/cover;"></div> -->
+				</div>
+
+				<div class="slider-nav">
+				  <!-- <div class="small_img" style="background: url(./img/s1.jpg)no-repeat center/cover;"></div>
+				  <div class="small_img" style="background: url(./img/s2.jpg)no-repeat center/cover;"></div> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="pop-up">
+			<div class="pop-up-cont">
+				<p>Заявка отправлена!</p>
+			</div>
+		</div>
+
+		<script src="{% static 'js/main.js' %}"></script>
+
+
 	</body>
 </html>

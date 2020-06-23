@@ -79,21 +79,45 @@
 		</nav>
 
 		<div class="promo-about" style="background: url({% static 'img/my2.jpg' %})no-repeat center/cover;">
-			<h3>Автомобильные Новости</h3>
+			<h3>Наши контакты</h3>
 		</div>
-		
-		<div class="news">	
-			<div class="container">
-                {% for i,j in news.items %}
-				<article>
-					<h1>{{ i }}</h1>
-					<p>{{ j }}</p>
-				</article>
-                {% endfor %}
+		<div class="contacts">
+			<div class="container flex">
+					<section>
+						<h4>Режим работы:</h4>
+						<p><span>Пн - Пт</span>: 09:00-19:00</p><br>
+						<p><span>Сб</span>: 10:00-17:00</p>
+					</section>
+					<section>
+						<h4>Адрес:</h4>
+						<p>address text</p><br>
+						<a href="mailto:mail@mail.com">mail@mail.com</a>
+					</section>
+					<section>
+						<h4>Телефоны для связи:</h4>
+						<a href="tel:+380501111111">+380501111111</a><br><br>
+						<a href="tel:+380501111111">+380501111111</a>
+					</section>
+			</div>
+		</div>
 
-			</div>	
-		</div>
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440396.268054456!2d26.69138635335334!3d48.25583934828855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2spl!4v1592736267615!5m2!1sru!2spl" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		
+		<div class="order">
+			<a name="order"></a>
+			<div class="container flex">
+				<div class="form-text">
+					<h3>Узнайте стоимость работ по Вашему автомобилю прямо сейчас!</h3>
+					<p>Оставьте свои контактные данные, и наши специалисты свяжутся с Вами для выяснения всех деталей.</p>
+				</div>
+				<form method="post" class="form-wrap" id="order_form">
+					<input class="inp" name="u_name" type="text" placeholder="Имя">
+					<input class="inp" name="u_phone" type="tel" placeholder="Телефон">
+					<textarea name="u_mess" class="inp" style="height: 100px;" placeholder="Сообщение. Задайте свой вопрос нашему специалисту"></textarea>
+					<button class="all_btn">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
 
 		<footer>
 			<section class="container flex">

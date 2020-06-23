@@ -79,21 +79,29 @@
 		</nav>
 
 		<div class="promo-about" style="background: url({% static 'img/my2.jpg' %})no-repeat center/cover;">
-			<h3>Автомобильные Новости</h3>
+			<h3>Услуги и цены</h3>
 		</div>
-		
-		<div class="news">	
-			<div class="container">
-                {% for i,j in news.items %}
-				<article>
-					<h1>{{ i }}</h1>
-					<p>{{ j }}</p>
-				</article>
-                {% endfor %}
+		<div class="about_page">
+		<div class="container">
+			<div class="article">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore explicabo pariatur porro quam nobis quibusdam exercitationem dolorum est beatae ad cum asperiores, eum laudantium, ipsa. Facere optio iusto dolores molestiae magni, tempora, numquam sapiente doloremque pariatur et, at aperiam est maxime debitis accusantium deserunt quibusdam libero quia ratione voluptas? Modi repellendus laborum ipsum, distinctio eius, eos esse magni. Distinctio ut illo, tempore explicabo cum quisquam ullam earum, nihil expedita dignissimos voluptatum. Esse perferendis, eligendi adipisci repellat. Reprehenderit dolorum fugit, odit quia maiores laboriosam minima, delectus laudantium tenetur accusamus repellendus perspiciatis velit debitis, non perferendis eos obcaecati magnam. Optio, amet, earum.
+			</div>
 
-			</div>	
+			<table class="service_table">
+				<tr>
+					<th>Наименование услуги</th>
+					<th>Стоимость</th>
+				</tr>
+                {% for item,val in content.items %}
+                    <tr>
+					<td>{{ item }}</td>
+					<td>{{ val }}</td>
+				</tr>
+                {% endfor %}
+			</table>
 		</div>
-		
+		</div>
+
 
 		<footer>
 			<section class="container flex">
