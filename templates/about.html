@@ -57,10 +57,6 @@
 			<a class="menu_btn">
 				<span style="background: url({% static 'img/menu.png' %}) no-repeat center/contain;"></span>
 			</a>
-		<div class="mob_menu">
-			<a class="menu_btn">
-				<span style="background: url({% static 'img/menu.png' %}) no-repeat center/contain;"></span>
-			</a>
 				<nav class="mob_nav">
 				<a href="{% url 'index' %}">Главная</a>
 				<a href="{% url 'about' %}">О нас</a>
@@ -81,7 +77,6 @@
 				<a href="{% url 'contacts' %}">Контакты</a>
 			</div>
 		</nav>
-
 
 		<div class="promo-about" style="background: url({% static 'img/my2.jpg' %})no-repeat center/cover;">
 			<h3>О нас</h3>
@@ -123,7 +118,7 @@
 			
 		</footer>
 
-		<script src="js/main.js"></script>
+		<script src="{% static 'js/main.js' %}"></script>
 
 
 	</body>
