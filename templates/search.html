@@ -84,8 +84,9 @@
 		<div class="about_page">
 		<div class="container">
 			<div class="article search_block">
-				<form action="" class="search_form" method="post">
+				<form action="{% url 'parts' %}" class="search_form" method="post">{% csrf_token %}
 					<input type="search" class="inp" name="search_text" placeholder="Введите название запчасти">
+
 					<button class="all_btn" name="search_btn">Найти</button>
 				</form>
 				<br><br>
@@ -94,14 +95,17 @@
 			</div>
 			
 
-<!--			<table class="service_table">
+
+			<table class="service_table">
 				<tr>
-					<th>Наименование услуги</th>
-					<th>Стоимость</th>
+					<th>Бренд</th>
+					<th>Название запчасти</th>
+                    <th>Ориентировочная стоимость</th>
 				</tr>
 				<tr>
-					<td>title</td>
-					<td>100.00</td>
+					<td>{{ brand }}</td>
+					<td>{{ name }}</td>
+                    <td>{{ cennik }}</td>
 				</tr>
 				<tr>
 					<td>title</td>
@@ -112,7 +116,7 @@
 					<td>100.00</td>
 				</tr>
 			</table>
-		</div> -->
+		</div>
 		</div>
 
 

@@ -129,8 +129,21 @@ def prices(request):
     return render(request, 'prices.html', content)
 
 def patrs(request):
-
+    if request.method == "POST":
+        url = "http://vw-plus.com"
+        data = "/autoparts/search/"+request.POST.get("search_text")+"/"
+        req = requests.get(url+data)
+        soup = BeautifulSoup(req.text, "html.parser")
+        tags = soup.find_all("tr", class_="trow")
+        cennik = tags[0].find("td", class_="cost ttip").text.replace("\t","").replace("\n","")
+        name = soup.find("b", class_="name").text
+        band = soup.find("td", class_="tdbrand").find("a").text
+        print(request.POST.get("search_text"))
+        return render(request, 'search.html', {"cennik": cennik,
+                                               "name": name,
+                                               "brand": band})
     return render(request, 'search.html')
+
 
 def contacts(request):
 
