@@ -35,9 +35,9 @@ a { cursor: pointer; color: #535353; font-weight: 300; }
 
 h3,h1
 {
-  font-size: 36pt; 
+  font-size: 20pt;
   padding: 50px 0 40px; 
-  color: #CF485D; 
+  color: #cf485d;
   letter-spacing: 1px; 
   text-align: center;
   text-transform: uppercase;
