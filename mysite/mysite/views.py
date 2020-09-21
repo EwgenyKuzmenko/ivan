@@ -6,8 +6,10 @@ from bs4 import BeautifulSoup
 def index(request):
     return render(request, "index.html")
 
+
 def about(request):
     return render(request, 'about.html')
+
 
 def prices(request):
     price = {"Ш+Б колес R13,14 (одно колесо)/ без балансировки": "60.00/50.00",
@@ -128,6 +130,7 @@ def prices(request):
     content = {"content" : price}
     return render(request, 'prices.html', content)
 
+
 def patrs(request):
     if request.method == "POST":
         url = "http://vw-plus.com"
@@ -148,6 +151,7 @@ def patrs(request):
 def contacts(request):
 
     return render(request, 'contacts.html')
+
 
 def news(request):
     s = requests.get("http://auto.bigmir.net/autonews")
