@@ -83,7 +83,7 @@
 				<a href="{% url 'about' %}">О нас</a>
                 <a href="{% url 'news' %}">Новости</a>
 				<a href="{% url 'price' %}">Услуги и цены</a>
-				<a href="{% url 'parts' %}">Подбор запчастей</a>
+				<a href="{% url 'parts' %}">Продажа автомасел</a>
 				<a href="{% url 'contacts' %}">Контакты</a>
 			</div>
 		</nav>
@@ -109,7 +109,7 @@
 					       <h4>Цены на наши услуги</h4>
 					       <div class="article">
 					       	<p>Цены на услуги и ремонтные работы.</p></div>
-				           <a href="/" class="all_btn">Подробнее</a>
+				           <a href="{% url 'price' %}" class="all_btn">Подробнее</a>
 					    </figcaption>
 					</figure>
 					<figure>
@@ -117,7 +117,7 @@
 					    <figcaption>
 					       <h4>Ремонт ходовой части</h4>
 					       <div class="article">Подвеска авто постоянно находится под нагрузкой. Поэтому возникает острая необходимость в периодической диагностике и замене деталей. Цена на услуги ремонта ходовой подвески зависит от количества и сложности работ по замене деталей.</div>
-				           <a href="/" class="all_btn">Подробнее</a>
+				           <a href="{% url 'wheels' %}" class="all_btn">Подробнее</a>
 					    </figcaption>
 					</figure>
 					<figure>

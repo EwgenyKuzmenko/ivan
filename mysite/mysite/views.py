@@ -11,6 +11,9 @@ def about(request):
     return render(request, 'about.html')
 
 
+def wheels(request):
+    return render(request, 'wheels.html')
+
 def prices(request):
     price = {"Ш+Б колес R13,14 (одно колесо)/ без балансировки": "60.00/50.00",
              "Ш+Б колес R15,16 (одно колесо)/без балансировки": "75.00/65.00",

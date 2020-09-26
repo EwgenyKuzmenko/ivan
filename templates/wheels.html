@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171270796-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171270796-1');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>СТО Impuls Autoservice </title>
+	<meta name="description" content="Text description">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--Slick-->
+	<link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'js/slick/slick-theme.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+	<script src="{% static 'js/slick/slick.min.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+	<body>
+		<header>
+			<section class="container flex">
+				<div class="logo">
+					<a href="/" style="background: url({% static 'img/logo.png' %})no-repeat center left/50%">
+{#						<p>Impuls<br><span>autoservice</span></p>#}
+					</a>
+				</div>
+				<div class="mob">
+					<i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+				</div>
+				<div class="number">
+					<h4>Наши контакты:</h4>
+					<a href="tel:+38068 20 90 867" class="first-tel">+380682090867</a>
+					<a href="tel:+38050 32 77 636">+380503277636</a>
+				</div>
+				<div class="time">
+					 <h4>Режим работы:</h4>
+					<h5>Пн-Пт: 09:00-19:00</h5>
+					<h5 style="margin-left:-25px;">Сб: 10:00-17:00</h5>
+				</div>
+				<div class="social">
+					<a href="viber://add?number=380682090867" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
+					<a href="https://telegram.im/@impulse_stoBot" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+                </div>
+			</section>
+		</header>
+		<div class="mob_menu">
+			<a class="menu_btn">
+				<span style="background: url({% static 'img/menu.png' %}) no-repeat center/contain;"></span>
+			</a>
+				<nav class="mob_nav">
+				<a href="{% url 'index' %}">Главная</a>
+				<a href="{% url 'about' %}">О нас</a>
+                <a href="{% url 'news' %}">Новости</a>
+				<a href="{% url 'price' %}">Услуги и цены</a>
+				<a href="{% url 'parts' %}">Подбор запчастей</a>
+				<a href="{% url 'contacts' %}">Контакты</a>
+				</nav>
+		</div>
+
+		<nav class="menu">
+			<div class="container flex">
+				<a href="{% url 'index' %}">Главная</a>
+				<a href="{% url 'about' %}">О нас</a>
+                <a href="{% url 'news' %}">Новости</a>
+				<a href="{% url 'price' %}">Услуги и цены</a>
+				<a href="{% url 'parts' %}">Подбор запчастей</a>
+				<a href="{% url 'contacts' %}">Контакты</a>
+			</div>
+		</nav>
+
+		<div class="promo-about" style="background: url({% static 'img/my2.jpg' %})no-repeat center/cover;">
+			<h3>Ремонт Ходовой и развал схождение</h3>
+		</div>
+		<div class="about_page">
+		<div class="container">
+			<div class="article">
+                <h1 style="color: #222222">Ремонт ходовой в Кременчуге</h1>
+                Хотите качественный ремонт ходовой в Кременчуге? <br>
+
+                Звоните нам! Если ходовая часть (подвеска) неисправна — ЕСТЬ СМЕРТЕЛЬНЫЙ РИСК!!! С поломанной ходовой падает управляемость, которая приводит к ДТП!
+Давайте для начала разберемся, что же это такое “Ходовая часть”?! Так же вы могли слышать слово “Подвеска”. В первую очередь, это комплекс неких узлов. Благодаря ним передается крутящий момент.
+Если ходовая часть неисправна — автомобиль просто не сможет двигаться. А если и сможет, то вы рискуете здоровьем, или даже жизнью! Подвеска нужна для смягчения ударов, а так же для уменьшения вибраций.
+В нашей мастерской работают опытные мастера!. Несомненно, мы способны восстановить даже самые сложные узлы ходовой! В первую очередь нужно знать, что на ремонте подвески нельзя экономить. Потому-что от состояния подвески, зависит не только ваша безопасность, но и так же безопасность пассажиров!
+Мы желаем помочь вам. Потому-что возможно от этого зависит ваша жизнь!
+Звоните прямо сейчас! (9:00 – 20:00)
+
+            </div>
+		</div>
+		</div>
+		<div class="order">
+			<a name="order"></a>
+			<div class="container flex">
+				<div class="form-text">
+					<h3>Узнайте стоимость работ по Вашему автомобилю прямо сейчас!</h3>
+					<p>Оставьте свои контактные данные, и наши специалисты свяжутся с Вами для выяснения всех деталей.</p>
+				</div>
+				<form method="post" class="form-wrap" id="order_form">
+					<input class="inp" name="u_name" type="text" placeholder="Имя">
+					<input class="inp" name="u_phone" type="tel" placeholder="Телефон">
+					<textarea name="u_mess" class="inp" style="height: 100px;" placeholder="Сообщение. Задайте свой вопрос нашему специалисту"></textarea>
+					<button class="all_btn">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<section class="container flex">
+				<div class="footer-logo logo">
+					<a href="./" style="background: url({% static 'img/logo.jpg' %})no-repeat center left/50%">
+{#						<p>Impuls<br><span>autoservice</span></p>#}
+					</a>
+				</div>
+				<div class="number">
+					<h4>Наши контакты:</h4>
+					<a href="tel:+38068 20 90 867" class="first-tel">+380682090867</a>
+					<a href="tel:+38050 32 77 636">+380503277636</a>
+					<a href="mailto:impulsesto@gmail.com">impulsesto@gmail.com</a>
+				</div>
+				<div class="social">
+					<a href="viber://add?number=380682090867" target="_blank"><i class="viber_icon fab fa-viber fa-2x" aria-hidden="true"></i></a>
+					<a href="https://telegram.im/@impulse_stoBot" target="_blank"><i class="telegram_icon fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+                </div>
+
+			</section>
+			<p class="copy">Development by jekajeka63 © 2020</p>
+			<br>
+			
+		</footer>
+
+		<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+</html>
